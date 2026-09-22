@@ -1,0 +1,24 @@
+{
+  "protocol_version": "JEV_SCREEN_V1_2026-09-21",
+  "prompt_sha256": "4f249815241aa09ca3ba01de4d56e0e7ad0754397f15462baee68a3c9a3c9091",
+  "expected_model": "jev-1.13.0",
+  "random_seed": 20260921,
+  "n_records": 17191,
+  "n_datasets": 10,
+  "instructions": "\nPredict the candidate study's final inclusion status for the systematic\nreview using ONLY the information provided in the state.\n\nUse the systematic review title and verbatim eligibility criteria together\nwith the candidate study title and abstract.\n\nDo not use external knowledge.\nDo not invent missing information.\nWhen information is incomplete, make the best probabilistic decision based\nonly on the available title and abstract.\n",
+  "criteria": {
+    "include": "Based on the provided title and abstract, the candidate study is more consistent with satisfying the systematic review eligibility criteria than with violating them.",
+    "exclude": "Based on the provided title and abstract, the candidate study is more consistent with violating one or more systematic review eligibility criteria than with satisfying all of them."
+  },
+  "primary_input_fields": [
+    "review_title",
+    "eligibility_criteria_verbatim",
+    "candidate_title",
+    "candidate_abstract"
+  ],
+  "excluded_context_fields": [
+    "review_abstract"
+  ],
+  "created_utc": "2026-09-21T08:19:44.113355+00:00",
+  "public_export_note": "Only machine-specific input file paths were removed. Prompt and method settings retained."
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research artifact and the SYNERGY source dataset."
+title: "Jev biomedical evidence screening benchmark data and analysis"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Xiang
+    orcid: "https://orcid.org/0009-0005-6464-7377"
+version: 1.0.0
+date-released: 2026-09-22
+repository-code: "https://github.com/cx295410-dot/jev-biomedical-evidence-screening"
+license: MIT

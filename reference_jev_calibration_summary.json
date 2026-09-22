@@ -1,0 +1,18 @@
+{
+  "n": 17191,
+  "positive_n": 392,
+  "prevalence": 0.022802629282764237,
+  "brier": 0.016801948694084114,
+  "brier_skill": 0.24596338045814192,
+  "ECE10": 0.012754929905182946,
+  "mean_probability": 0.025371996975161418,
+  "zero_probability_n": 15128,
+  "zero_probability_positive_n": 44,
+  "high_probability_n": 138,
+  "high_probability_mean": 0.9521739130434783,
+  "high_probability_observed": 0.7101449275362319,
+  "jev_decision_differs_from_p_ge_05": 1,
+  "missing_title_n": 11,
+  "missing_abstract_n": 668,
+  "cross_review_record_id_repeated_rows": 362
+}

@@ -1,0 +1,78 @@
+{
+  "public_adapter": "Validated against archived outputs",
+  "bootstrap_replicates": 5000,
+  "review_resamples": 10000,
+  "row_seed": 20260921,
+  "review_seed": 20260922,
+  "tables": [
+    {
+      "file": "all_models_rank_pct_metrics.csv",
+      "rows": 5,
+      "matches": true
+    },
+    {
+      "file": "binary_metrics.csv",
+      "rows": 2,
+      "matches": true
+    },
+    {
+      "file": "cross_review_overlap.csv",
+      "rows": 362,
+      "matches": true
+    },
+    {
+      "file": "data_quality_sensitivity.csv",
+      "rows": 30,
+      "matches": true
+    },
+    {
+      "file": "jev_calibration_bins.csv",
+      "rows": 10,
+      "matches": true
+    },
+    {
+      "file": "macro_and_ranges.csv",
+      "rows": 5,
+      "matches": true
+    },
+    {
+      "file": "overall_metrics.csv",
+      "rows": 5,
+      "matches": true
+    },
+    {
+      "file": "paired_differences.csv",
+      "rows": 16,
+      "matches": true
+    },
+    {
+      "file": "per_review_metrics.csv",
+      "rows": 50,
+      "matches": true
+    },
+    {
+      "file": "review_resampling_macro_differences.csv",
+      "rows": 8,
+      "matches": true
+    },
+    {
+      "file": "screening_per_review.csv",
+      "rows": 50,
+      "matches": true
+    },
+    {
+      "file": "screening_review_resampling.csv",
+      "rows": 16,
+      "matches": true
+    },
+    {
+      "file": "screening_summary.csv",
+      "rows": 5,
+      "matches": true
+    }
+  ],
+  "calibration_summary_matches": true,
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "note": "Public-file integrity audit differs intentionally from the archived private-input audit. No model retraining or new inference."
+}

@@ -1,0 +1,12 @@
+{
+  "seed": 20260921,
+  "bootstrap_n": 5000,
+  "bootstrap": "paired within-review ordinary row bootstrap, fixed predictions",
+  "AUPRC": "non-interpolated average precision",
+  "screening": "within review, full boundary tie; secondary exact random-tie expected stopping position",
+  "WSS95": "0.95 - screening_fraction (target-recall convention)",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "all_checks": 103
+}

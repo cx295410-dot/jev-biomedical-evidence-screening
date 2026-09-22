@@ -1,0 +1,47 @@
+{
+  "protocol_version": "ZERO_COST_BASELINES_V1_2026-09-21",
+  "created_utc": "2026-09-21T13:47:08.818428+00:00",
+  "random_seed": 20260921,
+  "n_records": 17191,
+  "n_datasets": 10,
+  "review_context_fields": [
+    "review_title",
+    "eligibility_criteria_verbatim"
+  ],
+  "explicitly_excluded_context_fields": [
+    "review_abstract"
+  ],
+  "baselines": {
+    "bm25": {
+      "type": "unsupervised lexical ranking"
+    },
+    "tfidf": {
+      "type": "unsupervised lexical similarity"
+    },
+    "minilm": {
+      "type": "unsupervised semantic embedding similarity",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "device": "cpu"
+    },
+    "logistic_regression": {
+      "type": "supervised classical ML",
+      "validation": "leave-one-review-out",
+      "held_out_review_labels_used_for_training": false,
+      "class_weight": "balanced",
+      "threshold": 0.5,
+      "features": [
+        "tfidf_score",
+        "tfidf_rank_pct",
+        "bm25_z",
+        "bm25_rank_pct",
+        "lexical_jaccard",
+        "query_coverage",
+        "title_query_coverage",
+        "abstract_missing",
+        "log_doc_token_count",
+        "log_title_token_count"
+      ]
+    }
+  },
+  "public_export_note": "Only machine-specific input file paths were removed. Prompt and method settings retained."
+}
