@@ -4,9 +4,6 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
-from docx import Document
-from docx.shared import Inches,Pt
-from docx.enum.text import WD_ALIGN_PARAGRAPH
 B=pathlib.Path(__file__).resolve().parent
 O=B;F=B/'figures';F.mkdir(exist_ok=True)
 def read(n):return list(csv.DictReader((B/('reference_'+n)).open(encoding='utf-8-sig')))
